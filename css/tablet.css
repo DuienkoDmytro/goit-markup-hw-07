@@ -1,0 +1,46 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+.container {
+        padding: 0 16px;
+        width: 768px;
+        margin: 0 auto;
+    }
+       /* .section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+       } */
+       .bg-comp-features {
+
+        display: none;
+    }
+
+    .third-priourity-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    .feature-text {
+        margin-top: 8px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    .list-item-comp-features {
+        margin-top: 72px;
+    }
+    .feature-flex{
+        display: flex;
+        column-gap: 24px;
+        flex-wrap: wrap;
+    }
+    .list-item-comp-features {
+            flex-basis: calc((100% -  1* 24px) / 2);
+    }
+        .desktop-only {
+            display: none;
+        }
+}
