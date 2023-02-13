@@ -84,16 +84,16 @@ body {
 }
 
 /* header */
-.header {
+/* .header {
   line-height: 1.5;
-}
+} */
 
-.header-list {
+/* .header-list {
   list-style-type: none;
   padding-top: 24px;
   padding-bottom: 24px;
-  }
-.logo {
+  } */
+/* .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -108,16 +108,16 @@ body {
 }
 .first-part-logo {
   color: var(--logo-first-part-color);
-}
-.tel {
+} */
+/* .tel {
   text-transform: uppercase;
 }
 .link {
   text-decoration: none;
   color: var(--link-color);  
   transition: color var(--transition-dur);
-}
-.active{
+} */
+/* .active{
   position: relative;
   color: var(--focus-color);
   display: block;
@@ -131,7 +131,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -24px;
-}
+} */
 .link-contacts {
   text-decoration: none;
   color: var(--contacts-color);
@@ -154,10 +154,10 @@ body {
 .list {
   list-style-type: none;
 }
-.list-item-comp-features {
+/* .list-item-comp-features {
   flex-basis: calc((100% - 3 * 24px) / 4);
-}
-.bg-comp-features {
+} */
+/* .bg-comp-features {
   height: 112px;
   width: 264px;
   background-color: var(--bg-comp-features-color);
@@ -166,7 +166,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-}
+} */
 .comp-features-icon {
   width: 64px;
   height: 64px;
@@ -178,11 +178,11 @@ body {
 .list-worker {
   text-align: center;
 }
-.adress {
+/* .adress {
   font-style: normal;
   margin-left: auto;
-}
-.nav-flex-usage {
+} */
+/* .nav-flex-usage {
   display: flex;
   background-color: var(--main-background-color);
   font-size: 16px;
@@ -202,7 +202,7 @@ body {
 .adress-flex-usage {
   display: flex;
   gap: 40px;
-}
+} */
 /* hero section */
 .visually-hidden {
   position: absolute;
@@ -216,7 +216,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.hero {
+/* .hero {
   margin: 0 auto;
   color: var(--hero-section-color);
   background-color: var(--footer-background-color);
@@ -232,7 +232,7 @@ body {
   margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
-}
+} */
 
 .button {
   border: none;
@@ -272,9 +272,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.team-section-background-color {
+/* .team-section-background-color {
   background-color: var(--team-section-bckgnd-color);
-}
+} */
 .feature-text {
   color: var(--feature-text);
   font-size: 16px;
@@ -315,11 +315,7 @@ body {
   fill: var(--social-list-icon-color);
 }
 
-.client-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
+
 .client-item {
   height: 88px;
   width: 168px;
@@ -349,15 +345,15 @@ body {
   transition: fill var(--transition-dur);
 }
 /* ================footer=================== */
-.footer {
+/* .footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
  }
 .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+   font-family: "Raleway", sans-serif;
+ font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   color: var(--main-text-color);
@@ -418,9 +414,9 @@ background-color: var(--hover-social-list-background-color);
 }
 .pb-section {
   padding-bottom: 120px;
-}
+} */
 /* ================FOOTER-SUBSCRIBE-PART================== */
-.footer-subscribe-part{
+/* .footer-subscribe-part{
   display: flex;
   gap: 24px;
   margin-top: 16px;
@@ -452,7 +448,7 @@ input::placeholder{
   display: flex;
   gap: 80px;
   /* justify-content: space-between; */
-}
+/* }
 .footer-button{
     border: none;
     padding: 8px 24px;
@@ -477,7 +473,7 @@ input::placeholder{
   background-color: var(--btn-hover-background-color);
   color:var(--hover-social-list-background-color);
 }
-
+ */ */
 
 /* ================/FOOTER-SUBSCRIBE-PART================= */
 
@@ -548,12 +544,12 @@ ul {
 ul {
   padding-left: 0;
 }
-.container {
+/* .container {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
   width: 1158px;
-}
+} */
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -562,19 +558,22 @@ ul {
   display: flex;
   gap: 24px;
 }
-
+.team-section-background-color {
+  background-color: var(--team-section-bckgnd-color);
+}
 
 .t-member-card {
   background: var(--t-member-card-background-color);
   box-shadow: var(--t-member-card-box-shadow-color);
   border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--card-border-color);
-  /* flex-basis: calc((100% - 24px * 3) / 4); */
+  
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .worker-title-text {
   padding-top: 32px;

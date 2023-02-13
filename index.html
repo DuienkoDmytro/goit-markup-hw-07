@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
   />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/mobileadaptive.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,13 +22,16 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
       <div class="main-flex-container">  
-      <nav class="nav-flex-usage">
+      <nav class="mob-flex-usage">
         <a href="/" class="logo"
           ><span class="first-part-logo">Web</span>Studio</a
         >
+        <button type="button" class="mbl-btn"><svg class="icon-mbl-btn" width="32" height="22">
+            <use href="./images/icons/sprite.svg#icon-charm-menu-hamburger"></use></svg>
+        </button>
         <ul class="header-list nav-pages">
           <li class="probe">
             <a href="index.html" class="link active">Studio</a>
@@ -40,12 +44,12 @@
       </nav>
       <address class="adress">
         <ul class="header-list adress-flex-usage">
-          <li>
+          <li class="mail">
             <a href="mailto:info@devstudio.com" class="link-contacts"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="tel">
             <a href="tel:+110001111111" class="link-contacts"
               >+11 (000) 111-11-11</a
             >
@@ -59,8 +63,9 @@
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="button" data-modal-open>Order Service</button>
-      </div></section> -->
-      <div class="container"><section class="section">
+      </div></section>
+      <section class="section">
+        <div class="container">
         <!--company`s features-->
         <h2 class="second-priourity-title visually-hidden">Our Features</h2>
         <ul class="list feature-flex">
@@ -105,9 +110,11 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-    </div>
-      <div class="container desktop-only"><section class="pb-section">
+    
+      <section class="pb-section desktop-only">
+        <div class="container">
         <h2 class="second-priourity-title">What are we doing</h2>
         <ul class="list stdrt-flex-usage">
           <li class="list-item">
@@ -135,10 +142,12 @@
             />
           </li>
         </ul>
-        </section></div>
-      <div class="container"><section class="team-section-background-color section">
+        </div>
+      </section>
+      <section class="team-section-background-color section">
+        <div class="container container-mini">
         <h2 class="second-priourity-title">Our Team</h2>
-        <ul class="list">
+        <ul class="list tablet-flex">
           <li class="t-member-card list-worker">
             <img
               src="./images/markguerrero.jpg"
@@ -279,10 +288,11 @@
         </ul>
       
         
-      </section></div>
+      </div>
+    </section>
       
-      <!-- <section class="section">
-        <div class="container">
+      <section class="section">
+        <div class="container container-mini">
           <h2 class="second-priourity-title">Customers</h2>
         <ul class="client-list list">
           <li class="client-item"><a href="" class="client-link">
@@ -333,16 +343,16 @@
 
 
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
-      <div class="container">
+    <footer class="footer">
+      <div class="container container-mini">
         <div class="footer-common-wrap">
         <div class="footer-wrap">
-      <div><a href="/" class="footer-logo"
-        ><span class="first-part-logo">Web</span
-        ><span class="second-part-logo">Studio</span></a
-      >
+      <div class="mobile-footer-alignment">
+        <a href="/" class="footer-logo">
+        <span class="first-part-logo">Web</span>
+        <span class="second-part-logo">Studio</span></a>
       <p class="footer-text first-part-footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
@@ -375,7 +385,7 @@
       </div>
             
         </div>
-        <form>
+        <form class="footer-form">
         <p class="footer-text">Subscribe</p>
         <div class="footer-subscribe-part">
           <label class="footer-subscribe" for="user_email">
@@ -393,8 +403,8 @@
         </form>
         </div>
       </div>
-    </footer> -->
-<!-- <div class="bg-window is-hidden" data-modal>
+    </footer>
+<div class="bg-window is-hidden" data-modal>
   <div class="modal-window">
     <button type="button" class="modal-window-close-btn" data-modal-close>
       <svg class="modal-window-close-btn-icon">
@@ -472,7 +482,74 @@
   </div>
 
 
-</div> -->
+</div>
+<!--====================HEADER MODAL WINDOW===================== -->
+
+<div class="header-modal-window-wrap">
+  <div class="">
+    <button type="button" class="modal-window-close-btn">
+      <svg class="modal-window-close-btn-icon">
+        <use href="./images/icons/sprite.svg#icon-close-modal-window"></use>
+      </svg>
+    </button>
+    <ul class="mobile-sections list">
+      <li>
+        <a href="index.html" class="link">Studio</a>
+      </li>
+      <li>
+        <a href="./portfolio.html" class="link">Portfolio</a>
+      </li>
+      <li><a href="" class="link">Contacts</a></li>
+    </ul>
+    </nav>
+    <address class="adress">
+      <ul class="header-list modal-adress-flex-usage">
+        <li class="mail">
+          <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+        </li>
+        <li class="tel">
+          <a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </address>
+    <ul class="list header-social-links">
+      <li class="social-links-item">
+        <a class="social-link" href="/">
+          <svg class="social-list-icon">
+            <use href="./images/icons/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    
+      <li class="social-links-item">
+        <a class="social-link" href="/">
+          <svg class="social-list-icon">
+            <use href="./images/icons/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-links-item">
+        <a class="social-link" href="/">
+          <svg class="social-list-icon">
+            <use href="./images/icons/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-links-item">
+        <a class="social-link" href="/">
+          <svg class="social-list-icon">
+            <use href="./images/icons/sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+     
+
+  </div>
+
+
+</div>
+<!--====================/HEADER MODAL WINDOW===================== -->
 <script src="./js/modal.js"></script>
   </body>
 </html>

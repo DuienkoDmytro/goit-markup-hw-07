@@ -1,0 +1,39 @@
+@media screen and (min-width: 480px){
+    .container{
+        padding: 0 16px;
+        width: 480px;
+        margin: 0 auto;
+    }    
+    .bg-comp-features{
+        display: none;
+    }
+    .third-priourity-title{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            text-align: center;
+    }        
+        .list-item-comp-features {
+        margin-top: 72px;
+        }
+        .desktop-only{
+        display: none;
+        }
+        
+/* ===================HEADER========================= */
+.header {
+    padding: 0;
+}
+/* ===================/HEADER======================== */
+/* ===================CUSTOMERS SECTION============== */
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+}
+.client-item {
+    flex-basis: calc((100% - 16px)/2);
+}
+}

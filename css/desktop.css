@@ -1,32 +1,116 @@
-@media screen and (min-width: 769px) {
-    .container {
-        padding: 0 16px;
-        margin: 0 auto;
-        width: 1158px;
+@media screen and (min-width: 1200px) {
+    /* ===================header========================== */
+    .tel, .mail {
+            font-size: 16px;
+            font-weight: 400;
+            /* line-height: 1.5;
+            letter-spacing: 0.02em; */
+            text-align: left;
+        }
+    .adress {
+        margin-left: auto;
+        }
+    .mail{
+            margin-right: 40px;
+        }
+    .main-flex-container{
+        align-items: baseline;
     }
+
+
+
+    
+    /* ===================/header======================== */
+    .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 1158px;
+}
     .section {
     padding-top: 120px;
     padding-bottom: 120px;
     }
-  
-    /* .feature-text {
-        margin-top: 8px;
-        font-weight: 500;
-        line-height: 1.5;
+
+
+    .feature-text {
+        color: var(--feature-text);
+        font-weight: 400;
+        font-size: 16px;
+        /* line-height: 1.5;
         letter-spacing: 0.02em;
-        text-align: left;
-    } */
-
-    /* .list-item-comp-features {
-        margin-top: 72px;
-    } */
-
+        text-align: left; */
+    }
+        .third-priourity-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            text-align: left;
+        }
+        
+        .bg-comp-features {
+            height: 112px;
+            width: 264px;
+            background-color: var(--bg-comp-features-color);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+    .list-item-comp-features {
+        margin-top: 0;
+    }
+    .desktop-only {
+    display: contents;
+    }
+   .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        }
+/* =========================OUR TEAM=========================== */
+        .t-member-card {
+        margin-top: 0;
+        }
+/* ========================/OUR TEAM=========================== */
     .feature-flex {
         display: flex;
-        gap: 24px;       
+        gap: 24px;    
+        flex-wrap: nowrap;   
     }
 
     .list-item-comp-features {
         flex-basis: calc((100% - 2* 24px) / 3);
     }
+    .team-section-background-color {
+                padding-top: 96px;
+                padding-bottom: 104px;
+    }
+    
+    .tablet-flex {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        }
+    .t-member-card {
+        flex-basis: calc((100% - 2*24px)/3);
+        }
+ /*================= CUSTOMERS SECTION ====================== */
+    .client-list {
+                    display: flex;
+                    justify-content: center;
+                    gap: 24px;
+        }
+    .client-item {
+     flex-basis: calc((100% - 5*24px)/6);
+  }
 }
+/* ========================FOOTER============================ */
+/* .footer-wrap {
+    flex-wrap: nowrap;
+    gap: 120px;
+}
+.footer-common-wrap {
+    gap: 80px;
+} */
+/* ========================/FOOTER============================ */
