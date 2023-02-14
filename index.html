@@ -29,11 +29,12 @@
         <a href="/" class="logo"
           ><span class="first-part-logo">Web</span>Studio</a
         >
-        <button type="button" class="mbl-btn"><svg class="icon-mbl-btn" width="32" height="22">
+        <button class="mbl-btn" data-menu-open type="button"><svg class="icon-mbl-btn" width="32" height="22">
             <use href="./images/icons/sprite.svg#icon-charm-menu-hamburger"></use></svg>
         </button>
+
         <ul class="header-list nav-pages">
-          <li class="probe">
+          <li>
             <a href="index.html" class="link active">Studio</a>
           </li>
           <li>
@@ -42,6 +43,7 @@
           <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
+
       <address class="adress">
         <ul class="header-list adress-flex-usage">
           <li class="mail">
@@ -56,7 +58,75 @@
           </li>
         </ul>
       </address>
-      </div></div>
+
+      </div>
+    </div>
+    
+    <!--====================HEADER MODAL WINDOW===================== -->
+    <div class="header-modal-window-wrap is-hidden" data-menu>
+                      <div class="mob-menu-container">
+                        <div>
+                        <button class="modal-window-close-btn" data-menu-close type="button">
+                            <svg class="modal-window-close-btn-icon">
+                            <use href="./images/icons/sprite.svg#icon-close-modal-window"></use>
+                          </svg>
+                        </button>
+                        <ul class="mobile-sections list">
+                          <li>
+                            <a href="index.html" class="link">Studio</a>
+                          </li>
+                          <li>
+                            <a href="./portfolio.html" class="link">Portfolio</a>
+                          </li>
+                          <li><a href="" class="link active">Contacts</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <address class="adress">
+                          <ul class="header-list modal-adress-flex-usage">
+                            <li class="mail">
+                              <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+                            </li>
+                            <li class="tel">
+                              <a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a>
+                            </li>
+                          </ul>
+                        </address>
+                        <ul class="list header-social-links">
+                          <li class="social-links-item">
+                            <a class="social-link" href="/">
+                              <svg class="social-list-icon">
+                                <use href="./images/icons/sprite.svg#instagram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                    
+                          <li class="social-links-item">
+                            <a class="social-link" href="/">
+                              <svg class="social-list-icon">
+                                <use href="./images/icons/sprite.svg#twitter"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-links-item">
+                            <a class="social-link" href="/">
+                              <svg class="social-list-icon">
+                                <use href="./images/icons/sprite.svg#facebook"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-links-item">
+                            <a class="social-link" href="/">
+                              <svg class="social-list-icon">
+                                <use href="./images/icons/sprite.svg#linkedin"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      </div>
+    </div>
+    <!--====================/HEADER MODAL WINDOW===================== -->
     </header>
     <main>
       <section class="hero">
@@ -118,9 +188,10 @@
         <h2 class="second-priourity-title">What are we doing</h2>
         <ul class="list stdrt-flex-usage">
           <li class="list-item">
-            <img
+            <img              
               src="./images/device1.jpg"
               alt="monitor screen"
+              srcset="./images/device1.jpg 1x, ./images/device1-x2.jpg 2x"
               width="360"
               height="300"
             />
@@ -129,6 +200,7 @@
             <img
               src="./images/device2.jpg"
               alt="a few mobile`s screens placed one by one"
+              srcset="./images/device2.jpg 1x, ./images/device2-x2.jpg 2x"
               width="360"
               height="300"
             />
@@ -137,6 +209,7 @@
             <img
               src="./images/device3.jpg"
               alt="laptop and mobile phone synchronisation process screen"
+              srcset="./images/device3.jpg 1x, ./images/device3-x2.jpg 2x"
               width="360"
               height="300"
             />
@@ -144,6 +217,7 @@
         </ul>
         </div>
       </section>
+
       <section class="team-section-background-color section">
         <div class="container container-mini">
         <h2 class="second-priourity-title">Our Team</h2>
@@ -152,6 +226,7 @@
             <img
               src="./images/markguerrero.jpg"
               alt="Mark Guerrero photo"
+              srcset="./images/markguerrero.jpg 1x, ./images/markguerrero-x2.jpg 2x"
               width="264"
               height="260"
             />
@@ -186,6 +261,7 @@
             <img
               src="./images/tomford.jpg"
               alt="Tom Ford photo"
+              srcset="./images/tomford.jpg 1x, ./images/tomford-x2.jpg 2x"
               width="264"
               height="260"
             />
@@ -221,6 +297,7 @@
             <img
               src="./images/camilagarcia.jpg"
               alt="Camila Garcia photo"
+              srcset="./images/camilagarcia.jpg 1x, ./images/camilagarcia-x2.jpg 2x"
               width="264"
               height="260"
             />
@@ -255,6 +332,7 @@
             <img
               src="./images/danielwilson.jpg"
               alt="Daniel Wilson photo"
+              srcset="./images/danielwilson.jpg 1x, ./images/danielwilson-x2.jpg 2x"
               width="264"
               height="260"
             />
@@ -485,7 +563,7 @@
 </div>
 <!--====================HEADER MODAL WINDOW===================== -->
 
-<div class="header-modal-window-wrap">
+<!-- <div class="header-modal-window-wrap">
   <div class="">
     <button type="button" class="modal-window-close-btn">
       <svg class="modal-window-close-btn-icon">
@@ -548,8 +626,9 @@
   </div>
 
 
-</div>
+</div> -->
 <!--====================/HEADER MODAL WINDOW===================== -->
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
   </body>
 </html>

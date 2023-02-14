@@ -31,11 +31,11 @@
         row-gap: 4px;
         padding-top: 24px;
     }
-        .active {
+        /* .active {
             position: relative;
             color: var(--focus-color);
             display: block;
-        }
+        } */
     
         .active::after {
             content: '';
@@ -74,7 +74,7 @@
                 letter-spacing: 0.04em;
                 text-align: left;
         }
-        
+       
 /* =====================/header======================== */
 
 /*========================HERO==========================  */
@@ -84,6 +84,20 @@
     margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
+}
+.hero {
+
+    background-image: var(--bg-gradient), url(../images/bg.jpg);
+
+    max-width: 1200px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--bg-gradient),url(../images/bgx2.jpg);
+    }
 }
 
 /*========================/HERO==========================  */
@@ -114,9 +128,9 @@
         column-gap: 24px;
         flex-wrap: wrap;
     }
-         .list-item-comp-features:first-child {
-             margin-top: auto;
-         }
+        .list-item-comp-features:first-child {
+        margin-top: auto;
+    }
     .list-item-comp-features {
             flex-basis: calc((100% -  1* 24px) / 2);
     }
@@ -128,7 +142,6 @@
         }
     
         .team-section-background-color {
-            padding-top: 96px; 
             padding-bottom: 104px;
         }
         .tablet-flex{
@@ -153,9 +166,9 @@
     .client-item {
         flex-basis: calc((100% - 2*24px)/3);
     }
-}
+
 /* ==========================FOOTER========================== */
-/* .footer-text {
+.footer-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
@@ -168,11 +181,19 @@
   }
   .footer-text {
     text-align: left;
-  } */
+  }
 .footer-wrap{
-/* display: flex;   
+display: flex;   
 flex-direction: row; 
 gap: 24px;
-margin: 0; */
+margin: 0;
+
 }
 /* ==========================/FOOTER========================== */
+/* =========================MODAL WINDOW===================== */
+.modal-window {
+    width: 408px;
+    padding: 72px 24px 24px;
+}
+/* =========================/MODAL WINDOW===================== */
+}

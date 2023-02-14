@@ -62,12 +62,13 @@
         margin-top: 0;
     }
     .desktop-only {
-    display: contents;
+    display: block;
     }
    .section {
         padding-top: 120px;
         padding-bottom: 120px;
         }
+   
 /* =========================OUR TEAM=========================== */
         .t-member-card {
         margin-top: 0;
@@ -104,13 +105,13 @@
     .client-item {
      flex-basis: calc((100% - 5*24px)/6);
   }
-}
+
 /* ========================FOOTER============================ */
-/* .footer-wrap {
-    flex-wrap: nowrap;
+.footer-wrap {
     gap: 120px;
 }
 .footer-common-wrap {
     gap: 80px;
-} */
+}
 /* ========================/FOOTER============================ */
+}
