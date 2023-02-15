@@ -68,7 +68,21 @@
         padding-top: 120px;
         padding-bottom: 120px;
         }
-   
+   /*========================HERO==========================  */
+      .hero {
+       background-image: var(--bg-gradient), url(../images/bg.jpg);
+
+       max-width: 1440px;
+   }
+
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       .hero {
+       background-image: var(--bg-gradient), url(../images/bgx2.jpg);
+       }
+   }
+
 /* =========================OUR TEAM=========================== */
         .t-member-card {
         margin-top: 0;
